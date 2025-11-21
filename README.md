@@ -4,10 +4,10 @@ GitHub Pages site for hosting OpenSearch configurations.
 
 ## Confluence Search Setup
 
-This repo provides a one-click Chrome OpenSearch setup for Confluence.
+This repo provides instructions for adding Confluence as a Chrome search engine.
 
-**Before deploying:**
-1. Edit `confluence-search.xml` and replace `your-confluence.atlassian.net` with your actual Confluence domain
-2. Update the same URL in `index.html` instructions
+**Note:** Chrome removed OpenSearch auto-discovery in March 2023, so users need to manually add the search engine. The page provides easy copy-paste values to make this quick.
 
-Once published via GitHub Pages, users can visit the site and Chrome will auto-detect the search engine or they can manually add it following the on-page instructions.
+**URL:** https://goldcaddy77.github.io/pages/
+
+Users visit the page and follow the 3-step process to add Confluence search (shortcut: `cf`) to their Chrome address bar.

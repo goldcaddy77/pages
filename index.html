@@ -8,7 +8,7 @@
       rel="search"
       type="application/opensearchdescription+xml"
       title="Confluence Search"
-      href="./confluence-search.xml"
+      href="https://raw.githubusercontent.com/goldcaddy77/pages/refs/heads/main/confluence-search.xml"
     />
     <style>
       body {
@@ -43,57 +43,103 @@
         border-left: 4px solid #ffc107;
         margin: 15px 0;
       }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
     <h1>🔍 Confluence Search - Chrome Setup</h1>
 
     <p>
-      Add Confluence search directly to your Chrome address bar. Type a keyword
-      (like <span class="keyword">con</span>) and search instantly!
+      Add Confluence search directly to your Chrome address bar. Type
+      <span class="keyword">cf your search</span> to search instantly!
     </p>
 
-    <h2>Installation Steps</h2>
+    <h2>Quick Setup (2 minutes)</h2>
 
     <div class="step">
-      <strong>Step 1:</strong> Chrome should detect the search engine
-      automatically when you visit this page. Look for a prompt in the address
-      bar.
+      <strong>Step 1:</strong> Open Chrome settings →
+      <a
+        href="chrome://settings/searchEngines"
+        target="_blank"
+        style="color: #0052cc"
+        >chrome://settings/searchEngines</a
+      >
     </div>
 
     <div class="step">
-      <strong>Step 2:</strong> If no prompt appears, go to
-      <span class="keyword">chrome://settings/searchEngines</span>
-    </div>
-
-    <div class="step">
-      <strong>Step 3:</strong> Click "Add" under "Site search" and enter:
-      <ul>
-        <li><strong>Search engine:</strong> Confluence</li>
-        <li><strong>Keyword:</strong> con (or whatever you prefer)</li>
-        <li>
+      <strong>Step 2:</strong> Click "Add" under "Site search" and copy these
+      values:
+      <div
+        style="
+          background: white;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ddd;
+          border-radius: 3px;
+        "
+      >
+        <div style="margin: 5px 0">
+          <strong>Search engine:</strong>
+          <code
+            style="
+              background: #f0f0f0;
+              padding: 2px 5px;
+              margin-left: 10px;
+              user-select: all;
+            "
+            >Confluence</code
+          >
+        </div>
+        <div style="margin: 5px 0">
+          <strong>Shortcut:</strong>
+          <code
+            style="
+              background: #f0f0f0;
+              padding: 2px 5px;
+              margin-left: 10px;
+              user-select: all;
+            "
+            >cf</code
+          >
+        </div>
+        <div style="margin: 5px 0">
           <strong>URL:</strong>
-          https://your-confluence.atlassian.net/wiki/search?text=%s
-        </li>
-      </ul>
+          <code
+            style="
+              background: #f0f0f0;
+              padding: 2px 5px;
+              margin-left: 10px;
+              user-select: all;
+            "
+            >https://3playmedia.atlassian.net/wiki/search?text=%s</code
+          >
+        </div>
+      </div>
     </div>
 
     <div class="step">
-      <strong>Step 4:</strong> Test it! Type
-      <span class="keyword">con your search query</span> in Chrome's address bar
+      <strong>Step 3:</strong> Test it! In Chrome's address bar, type:
+      <div
+        style="
+          background: white;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ddd;
+          border-radius: 3px;
+        "
+      >
+        <code style="font-size: 14px">cf test search</code>
+      </div>
     </div>
 
     <div class="note">
-      <strong>⚠️ Note:</strong> Make sure to replace
-      <code>your-confluence.atlassian.net</code> with your actual Confluence URL
-      in both the <code>confluence-search.xml</code> file and the steps above.
+      <strong>💡 Pro Tip:</strong> You can use any shortcut you want instead of
+      "cf" - popular choices: "con", "conf", "wiki"
     </div>
-
-    <h2>Alternative: Bookmark Method</h2>
-    <p>You can also create a bookmark with this URL:</p>
-    <p>
-      <code>https://your-confluence.atlassian.net/wiki/search?text=%s</code>
-    </p>
-    <p>And use it as a search engine in Chrome settings.</p>
   </body>
 </html>
