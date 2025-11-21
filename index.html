@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confluence Search - One-Click Install</title>
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="Confluence Search"
+      href="./confluence-search.xml"
+    />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      h1 {
+        color: #0052cc;
+      }
+      .step {
+        background: #f4f5f7;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+        border-left: 4px solid #0052cc;
+      }
+      .keyword {
+        background: #e8e8e8;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: monospace;
+      }
+      .note {
+        background: #fff3cd;
+        padding: 10px;
+        border-radius: 5px;
+        border-left: 4px solid #ffc107;
+        margin: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🔍 Confluence Search - Chrome Setup</h1>
+
+    <p>
+      Add Confluence search directly to your Chrome address bar. Type a keyword
+      (like <span class="keyword">con</span>) and search instantly!
+    </p>
+
+    <h2>Installation Steps</h2>
+
+    <div class="step">
+      <strong>Step 1:</strong> Chrome should detect the search engine
+      automatically when you visit this page. Look for a prompt in the address
+      bar.
+    </div>
+
+    <div class="step">
+      <strong>Step 2:</strong> If no prompt appears, go to
+      <span class="keyword">chrome://settings/searchEngines</span>
+    </div>
+
+    <div class="step">
+      <strong>Step 3:</strong> Click "Add" under "Site search" and enter:
+      <ul>
+        <li><strong>Search engine:</strong> Confluence</li>
+        <li><strong>Keyword:</strong> con (or whatever you prefer)</li>
+        <li>
+          <strong>URL:</strong>
+          https://your-confluence.atlassian.net/wiki/search?text=%s
+        </li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <strong>Step 4:</strong> Test it! Type
+      <span class="keyword">con your search query</span> in Chrome's address bar
+    </div>
+
+    <div class="note">
+      <strong>⚠️ Note:</strong> Make sure to replace
+      <code>your-confluence.atlassian.net</code> with your actual Confluence URL
+      in both the <code>confluence-search.xml</code> file and the steps above.
+    </div>
+
+    <h2>Alternative: Bookmark Method</h2>
+    <p>You can also create a bookmark with this URL:</p>
+    <p>
+      <code>https://your-confluence.atlassian.net/wiki/search?text=%s</code>
+    </p>
+    <p>And use it as a search engine in Chrome settings.</p>
+  </body>
+</html>
